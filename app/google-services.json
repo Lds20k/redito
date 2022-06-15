@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "980763773716",
+    "project_id": "redito-126cf",
+    "storage_bucket": "redito-126cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980763773716:android:78d6f50288ba5d969d1001",
+        "android_client_info": {
+          "package_name": "com.mobile.redito"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980763773716-e9u8pon07dmdsn3nmucuhcqop9jhmf5d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5HR34N2WtWhYxkSKGsooyC5DfAEDHYvY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "980763773716-e9u8pon07dmdsn3nmucuhcqop9jhmf5d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

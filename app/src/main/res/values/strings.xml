@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">redito</string>
+    <string name="title_activity_login">Login</string>
+
+    <string name="registrar">registrar</string>
+    <string name="entrar">entrar</string>
+    <string name="senha">Senha</string>
+    <string name="email">Email</string>
+    <string name="repetir_senha">Repetir senha</string>
+    <string name="title_activity_register">Registrar</string>
+</resources>
