@@ -21,14 +21,9 @@ class LoginActivity : AppCompatActivity() {
         this.binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(this.binding.root)
 
-//        this.auth = Firebase.auth
         this.auth = FirebaseAuth.getInstance()
-        //Verificar se usuario já esta logado
         val currentUser = auth.currentUser
         if(currentUser != null){
-//            reload();
-//            this.auth.signOut();
-//            print("opa")
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
@@ -50,7 +45,7 @@ class LoginActivity : AppCompatActivity() {
                         Thread{
                             inserirOuAtualizarUsuarioNoBancoLocal(email, password)
                         }.start()
-                        val intent = Intent(this, RegisterActivity::class.java)
+                        val intent = Intent(this, MainActivity::class.java)
                         startActivity(intent)
                     } else {
                         Toast.makeText(this, "Email ou senha incorretos!", Toast.LENGTH_LONG).show()
@@ -62,7 +57,6 @@ class LoginActivity : AppCompatActivity() {
 
     fun inserirOuAtualizarUsuarioNoBancoLocal(email: String, password: String){
         val databaseInstance = Room.databaseBuilder(this, AppDatabase::class.java, "AppDb")
-//            .fallbackToDestructiveMigration()
             .build()
         val daoUsuario = databaseInstance.usuarioDao()
 

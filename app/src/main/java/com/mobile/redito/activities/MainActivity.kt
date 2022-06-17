@@ -2,8 +2,10 @@ package com.mobile.redito.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.mobile.redito.PostFragment
 import com.mobile.redito.R
 import com.mobile.redito.databinding.ActivityMainBinding
+import com.mobile.redito.databinding.FragmentPostBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,8 +31,8 @@ class MainActivity : AppCompatActivity() {
 //                    supportFragmentManager.beginTransaction().replace(R.id.ContainerView, frag).commit()
                 }
                 R.id.post -> {
-//                    val frag = AlbumsFragment()
-//                    supportFragmentManager.beginTransaction().replace(R.id.ContainerView, frag).commit()
+                    val frag = PostFragment()
+                    supportFragmentManager.beginTransaction().replace(R.id.container, frag).commit()
                 }
                 else -> {
                     val frag = HomeFragment()

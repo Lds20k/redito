@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    app:cardBackgroundColor="@color/black"
+    app:cardCornerRadius="8dp"
+    app:contentPadding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewUsename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                tools:text="Usename" />
+
+            <TextView
+                android:id="@+id/textViewDateHour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:gravity="center_vertical|end"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                tools:text="DateHour" />
+
+            <ImageButton
+                android:id="@+id/imageButtonDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.03"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/delete"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                app:srcCompat="@drawable/ic_baseline_delete_24"
+                app:tint="#FF0000" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            tools:text="Message" />
+
+        <LinearLayout
+            android:id="@+id/textViewLikeNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButtonLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/like"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                app:srcCompat="@drawable/ic_baseline_thumb_up_24"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/textViewLikeCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minWidth="50dp"
+                android:minHeight="48dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                tools:text="00000" />
+
+            <ImageButton
+                android:id="@+id/imageButtonComment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/comment"
+                android:minHeight="48dp"
+                app:srcCompat="@drawable/ic_baseline_mode_comment_24"
+                app:tint="#FFFFFF" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
