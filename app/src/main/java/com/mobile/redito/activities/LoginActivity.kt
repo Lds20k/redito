@@ -8,6 +8,7 @@ import androidx.room.Room
 import br.senac.noteapp.models.AppDatabase
 import br.senac.noteapp.models.Usuario
 import com.google.firebase.auth.FirebaseAuth
+import com.mobile.redito.activities.MainActivity
 import com.mobile.redito.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
@@ -26,8 +27,10 @@ class LoginActivity : AppCompatActivity() {
         val currentUser = auth.currentUser
         if(currentUser != null){
 //            reload();
-            this.auth.signOut();
-            print("opa")
+//            this.auth.signOut();
+//            print("opa")
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
 
         this.binding.buttonRegistrar.setOnClickListener{
