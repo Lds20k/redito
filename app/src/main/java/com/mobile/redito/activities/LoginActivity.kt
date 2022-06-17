@@ -26,9 +26,8 @@ class LoginActivity : AppCompatActivity() {
         this.auth = FirebaseAuth.getInstance()
         val currentUser = auth.currentUser
         if(currentUser != null){
-//            val intent = Intent(this, MainActivity::class.java)
-//            startActivity(intent)
-              auth.signOut()
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         } else {
             Thread{
                 colocarUsernameESenha()
