@@ -87,7 +87,8 @@ class LoginActivity : AppCompatActivity() {
             usuario.senha = password
             daoUsuario.atualizarUsuario(usuario)
         } else if(usuario == null) {
-            val usuario = Usuario(null, email,password)
+            val username = email.split('@')[0]
+            val usuario = Usuario(null, username, email,password)
             daoUsuario.inserir(usuario)
         }
     }
