@@ -25,8 +25,8 @@ class MainActivity : AppCompatActivity() {
 //                    supportFragmentManager.beginTransaction().replace(R.id.ContainerView, frag).commit()
                 }
                 R.id.profile -> {
-//                    val frag = AlbumsFragment()
-//                    supportFragmentManager.beginTransaction().replace(R.id.ContainerView, frag).commit()
+                    val frag = ProfileFragment()
+                    supportFragmentManager.beginTransaction().replace(R.id.container, frag).commit()
                 }
                 R.id.post -> {
                     val frag = PostFragment()

@@ -19,4 +19,5 @@
     <string name="delete">Delete</string>
     <string name="enviar">enviar</string>
     <string name="mensagem">Mensagem</string>
+    <string name="logout">LogOut</string>
 </resources>
