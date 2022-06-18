@@ -2,10 +2,8 @@ package com.mobile.redito.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.mobile.redito.PostFragment
 import com.mobile.redito.R
 import com.mobile.redito.databinding.ActivityMainBinding
-import com.mobile.redito.databinding.FragmentPostBinding
 
 class MainActivity : AppCompatActivity() {
 
